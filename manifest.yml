@@ -1,0 +1,20 @@
+modules:
+  jira:projectPage:
+    - key: my-first-jira-quest-hello-world-project-page
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: my-first-jira-quest
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/a3e58947-88d0-42ec-96ec-08f87b3eb30c
