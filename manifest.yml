@@ -5,7 +5,7 @@ modules:
       resolver:
         function: resolver
       render: native
-      title: my-first-jira-quest
+      title: Emin's first Jira quest
   function:
     - key: resolver
       handler: index.handler
